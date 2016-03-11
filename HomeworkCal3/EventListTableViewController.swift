@@ -10,13 +10,22 @@ import UIKit
 
 class EventListTableViewController: UITableViewController {
 
-    var  events = [String]()
-    var newEvent: String = ""
+    var  events = [EventStruct]()
+    var newEvent = EventStruct(name: "", date: "")
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         events = ["Dinner","Study","Relax"]
+        newEvent = EventStruct(name: "Dinner", date: "April 2, 2016")
+        events.append(newEvent)
+        
+        newEvent = EventStruct(name: "Exam", date: "April 3, 2016")
+        events.append(newEvent)
+        
+        newEvent = EventStruct(name: "Relax", date: "April 4, 2016")
+        events.append(newEvent)
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -47,7 +56,8 @@ class EventListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("eventCell", forIndexPath: indexPath)
 
         // Configure the cell...
-        cell.textLabel!.text = events[indexPath.row]
+        cell.textLabel!.text = events[indexPath.row].name
+        cell.detailTextLabel?.text = events[indexPath.row].date
 
         return cell
     }
@@ -58,7 +68,7 @@ class EventListTableViewController: UITableViewController {
     
     @IBAction func done(segue:UIStoryboardSegue) {
         var eventDetailVC = segue.sourceViewController as! EventDetailViewController
-        newEvent = eventDetailVC.name
+        newEvent = EventStruct(name: eventDetailVC.name, date: eventDetailVC.date)
         
         events.append(newEvent)
         

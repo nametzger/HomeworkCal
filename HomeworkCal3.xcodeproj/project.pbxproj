@@ -16,6 +16,7 @@
 		01032E9E1C92A30C00C6993E /* HomeworkCal3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01032E9D1C92A30C00C6993E /* HomeworkCal3UITests.swift */; };
 		01032EAC1C92A48400C6993E /* EventListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01032EAB1C92A48400C6993E /* EventListTableViewController.swift */; };
 		01F372211C92A6C8004F197F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F372201C92A6C8004F197F /* EventDetailViewController.swift */; };
+		01F372231C92A99A004F197F /* EventStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F372221C92A99A004F197F /* EventStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		01032E9F1C92A30C00C6993E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01032EAB1C92A48400C6993E /* EventListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListTableViewController.swift; sourceTree = "<group>"; };
 		01F372201C92A6C8004F197F /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		01F372221C92A99A004F197F /* EventStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				01032E7D1C92A30C00C6993E /* AppDelegate.swift */,
 				01032E7F1C92A30C00C6993E /* ViewController.swift */,
 				01032E811C92A30C00C6993E /* Main.storyboard */,
+				01F372221C92A99A004F197F /* EventStruct.swift */,
 				01F372201C92A6C8004F197F /* EventDetailViewController.swift */,
 				01032EAB1C92A48400C6993E /* EventListTableViewController.swift */,
 				01032E841C92A30C00C6993E /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 				01032E801C92A30C00C6993E /* ViewController.swift in Sources */,
 				01F372211C92A6C8004F197F /* EventDetailViewController.swift in Sources */,
 				01032E7E1C92A30C00C6993E /* AppDelegate.swift in Sources */,
+				01F372231C92A99A004F197F /* EventStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

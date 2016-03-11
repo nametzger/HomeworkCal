@@ -11,6 +11,7 @@ import UIKit
 class EventDetailViewController: UIViewController {
     
     var name: String = ""
+    var date: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +25,13 @@ class EventDetailViewController: UIViewController {
     }
     
     @IBOutlet weak var eventName: UITextField!
+    @IBOutlet weak var eventDate: UITextField!
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if segue.identifier == "doneSegue" {
             name = eventName.text!
+            date = eventDate.text!
+            
         }
     }
 
