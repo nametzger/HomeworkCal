@@ -14,6 +14,8 @@
 		01032E881C92A30C00C6993E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01032E861C92A30C00C6993E /* LaunchScreen.storyboard */; };
 		01032E931C92A30C00C6993E /* HomeworkCal3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01032E921C92A30C00C6993E /* HomeworkCal3Tests.swift */; };
 		01032E9E1C92A30C00C6993E /* HomeworkCal3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01032E9D1C92A30C00C6993E /* HomeworkCal3UITests.swift */; };
+		01032EAC1C92A48400C6993E /* EventListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01032EAB1C92A48400C6993E /* EventListTableViewController.swift */; };
+		01F372211C92A6C8004F197F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F372201C92A6C8004F197F /* EventDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		01032E991C92A30C00C6993E /* HomeworkCal3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeworkCal3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01032E9D1C92A30C00C6993E /* HomeworkCal3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkCal3UITests.swift; sourceTree = "<group>"; };
 		01032E9F1C92A30C00C6993E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01032EAB1C92A48400C6993E /* EventListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListTableViewController.swift; sourceTree = "<group>"; };
+		01F372201C92A6C8004F197F /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				01032E7D1C92A30C00C6993E /* AppDelegate.swift */,
 				01032E7F1C92A30C00C6993E /* ViewController.swift */,
 				01032E811C92A30C00C6993E /* Main.storyboard */,
+				01F372201C92A6C8004F197F /* EventDetailViewController.swift */,
+				01032EAB1C92A48400C6993E /* EventListTableViewController.swift */,
 				01032E841C92A30C00C6993E /* Assets.xcassets */,
 				01032E861C92A30C00C6993E /* LaunchScreen.storyboard */,
 				01032E891C92A30C00C6993E /* Info.plist */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01032EAC1C92A48400C6993E /* EventListTableViewController.swift in Sources */,
 				01032E801C92A30C00C6993E /* ViewController.swift in Sources */,
+				01F372211C92A6C8004F197F /* EventDetailViewController.swift in Sources */,
 				01032E7E1C92A30C00C6993E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +493,7 @@
 				01032EA41C92A30C00C6993E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01032EA51C92A30C00C6993E /* Build configuration list for PBXNativeTarget "HomeworkCal3Tests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +502,7 @@
 				01032EA71C92A30C00C6993E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		01032EA81C92A30C00C6993E /* Build configuration list for PBXNativeTarget "HomeworkCal3UITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +511,7 @@
 				01032EAA1C92A30C00C6993E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
