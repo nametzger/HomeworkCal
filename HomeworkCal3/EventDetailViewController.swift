@@ -12,6 +12,7 @@ class EventDetailViewController: UIViewController {
     
     var name: String = ""
     var date: String = ""
+    var time: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class EventDetailViewController: UIViewController {
     
     @IBOutlet weak var eventName: UITextField!
     @IBOutlet weak var eventDate: UITextField!
+    @IBOutlet weak var eventTime: UITextField!
     
     @IBAction func dateFieldEditing(sender: UITextField) {
         let datePickerView:UIDatePicker = UIDatePicker()
@@ -46,6 +48,7 @@ class EventDetailViewController: UIViewController {
         if segue.identifier == "doneSegue" {
             name = eventName.text!
             date = eventDate.text!
+            time = eventTime.text!
             
         }
     }

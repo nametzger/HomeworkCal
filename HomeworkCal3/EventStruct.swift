@@ -12,4 +12,5 @@ import UIKit
 struct EventStruct {
     var name : String
     var date : String
+    var time : String
 }

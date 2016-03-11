@@ -11,19 +11,19 @@ import UIKit
 class EventListTableViewController: UITableViewController {
 
     var  events = [EventStruct]()
-    var newEvent = EventStruct(name: "", date: "")
+    var newEvent = EventStruct(name: "", date: "", time: "")
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        newEvent = EventStruct(name: "Dinner", date: "April 2, 2016")
+        newEvent = EventStruct(name: "Dinner", date: "April 2, 2016", time: "6:30")
         events.append(newEvent)
         
-        newEvent = EventStruct(name: "Exam", date: "April 3, 2016")
+        newEvent = EventStruct(name: "Exam", date: "April 3, 2016", time: "5:00")
         events.append(newEvent)
         
-        newEvent = EventStruct(name: "Relax", date: "April 4, 2016")
+        newEvent = EventStruct(name: "Relax", date: "April 4, 2016", time: "All Day")
         events.append(newEvent)
         
 
@@ -75,7 +75,7 @@ class EventListTableViewController: UITableViewController {
     
     @IBAction func done(segue:UIStoryboardSegue) {
         var eventDetailVC = segue.sourceViewController as! EventDetailViewController
-        newEvent = EventStruct(name: eventDetailVC.name, date: eventDetailVC.date)
+        newEvent = EventStruct(name: eventDetailVC.name, date: eventDetailVC.date, time: eventDetailVC.time)
         
         events.append(newEvent)
         
